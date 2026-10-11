@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neil Singh | Portbox - BCA Student, Developer &amp; Video Editor</title>
+  <meta name="description" content="Neil Singh (Portbox): portfolio of a BCA student exploring software development, problem-solving, and creative video editing through practical projects.">
+  <meta name="theme-color" content="#0a1020">
+  <!-- Lets CSS know JavaScript is running. Without JS, everything stays visible. -->
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ ICON SPRITE (do not edit) ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></symbol>
+    <symbol id="i-youtube" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+    <symbol id="i-telegram" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><polygon points="6 4 20 12 6 20 6 4"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="#home" class="brand" aria-label="Go to top of page">
+      <span class="brand-mark" aria-hidden="true">P</span>
+      <span class="brand-text"><span data-config="name">Neil Singh</span> <span class="brand-sep">|</span> <span class="brand-accent">Portbox</span></span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Open menu">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+
+    <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#videos">Video Editing</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home" aria-labelledby="hero-title">
+  <div class="container hero-grid">
+    <div class="hero-copy reveal">
+      <p class="eyebrow">BCA Student &middot; Aspiring Developer</p>
+      <h1 id="hero-title">
+        <span class="hero-name grad" data-config="name">Neil Singh</span>
+        <span class="hero-brand">Portbox</span>
+      </h1>
+      <p class="hero-tagline">Code with purpose. Create with curiosity.</p>
+      <p class="lead">BCA student and aspiring software developer interested in programming, problem-solving, AI-assisted development, and creative video editing. I learn by building practical projects.</p>
+
+      <div class="btn-row">
+        <a href="#projects" class="btn btn-primary">Explore My Work</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+        <a href="assets/resume.pdf" class="btn btn-text" data-resume-link download>
+          <svg class="ico" aria-hidden="true"><use href="#i-download"/></svg>
+          <span data-resume-label>Resume</span>
+        </a>
+      </div>
+
+      <div class="focus" aria-label="Current focus">
+        <span class="focus-label">Currently focused on</span>
+        <ul class="chips">
+          <li>C / C++</li>
+          <li>Web Development</li>
+          <li>DSA</li>
+          <li>AI-Assisted Development</li>
+          <li>Video Editing</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="hero-photo reveal" style="--d:1">
+      <!-- PHOTO: assets/profile.jpg. To change it, replace that file (keep the same name). -->
+      <div class="photo-frame smart-media" data-src="assets/profile.jpg">
+        <img alt="Portrait of Neil Singh wearing a black blazer and white shirt" hidden>
+        <div class="ph ph-person" role="img" aria-label="Profile photo placeholder">
+          <svg class="ico ico-lg" aria-hidden="true"><use href="#i-user"/></svg>
+          <span>Add your photo<br><small>assets/profile.jpg</small></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about" aria-labelledby="about-title">
+  <div class="container narrow">
+    <div class="section-head reveal">
+      <p class="eyebrow">About</p>
+      <h2 id="about-title">A student learning by building</h2>
+    </div>
+    <div class="about-body reveal" style="--d:1">
+      <p>I am a BCA student and aspiring software developer with an interest in programming, problem-solving, AI-assisted development, and creative video editing.</p>
+      <p>I enjoy learning by building practical projects, exploring new technologies, and turning ideas into useful digital experiences. I am continuously improving my technical and creative skills through hands-on practice.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="section alt" id="projects" aria-labelledby="projects-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Software Projects</p>
+      <h2 id="projects-title">Things I've built</h2>
+      <p class="sub">Practical projects where I apply what I'm learning.</p>
+    </div>
+
+    <div class="grid projects-grid" id="projectsGrid">
+
+      <!--
+        =====================================================
+        HOW TO ADD A NEW PROJECT
+        1. Copy everything from <article class="card project-card reveal"> to </article>
+        2. Paste it right after the last project card
+        3. Change: image path (data-src), alt text, title, description, tags, button links
+        4. Put your image in the assets folder. Remove a button you don't need.
+           A button with an empty data-link="" shows as disabled.
+        =====================================================
+      -->
+
+      <!-- PROJECT 1: NextPath AI -->
+      <article class="card project-card reveal">
+        <div class="card-media smart-media" data-src="assets/nextpath-ai.png">
+          <img alt="NextPath AI logo and project image" hidden>
+          <div class="ph" role="img" aria-label="NextPath AI image placeholder">
+            <svg class="ico ico-lg" aria-hidden="true"><use href="#i-code"/></svg>
+            <span>NextPath AI<br><small>Add image: assets/nextpath-ai.png</small></span>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>NextPath AI</h3>
+          <p>NextPath AI is an AI-powered career guidance platform that helps students explore suitable career paths, create personalized learning roadmaps, identify essential skills, and prepare for future opportunities based on their interests, goals, and current knowledge.</p>
+          <ul class="tags" aria-label="Technologies used">
+            <li>TypeScript</li><li>HTML</li><li>CSS</li>
+          </ul>
+          <div class="card-actions">
+            <a class="btn btn-primary btn-sm" data-link="https://nextpath-ai.ai.studio/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT 2: Inventory Management System
+           The thumbnail is a code-drawn SVG illustration with made-up sample data.
+           It is NOT a screenshot. To use a real screenshot later, replace the whole
+           <svg> block with the <img> block style used in Project 1. -->
+      <article class="card project-card reveal" style="--d:1">
+        <div class="card-media">
+          <svg class="illus" viewBox="0 0 640 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of a C console inventory menu with sample product rows. Sample data only, not a real screenshot.">
+            <rect width="640" height="400" fill="#0a1020"/>
+            <rect x="24" y="24" width="592" height="352" rx="14" fill="#070c18" stroke="#1f2e4d" stroke-width="2"/>
+            <path d="M24 38a14 14 0 0 1 14-14h564a14 14 0 0 1 14 14v30H24z" fill="#0f1a30"/>
+            <circle cx="52" cy="46" r="7" fill="#ff6b6b"/>
+            <circle cx="76" cy="46" r="7" fill="#ffd166"/>
+            <circle cx="100" cy="46" r="7" fill="#21e6cc"/>
+            <text x="124" y="52" font-size="18" fill="#93a1ba" font-family="ui-monospace, Menlo, Consolas, monospace">inventory.c</text>
+            <circle cx="580" cy="46" r="15" fill="#21e6cc"/>
+            <text x="580" y="53" font-size="20" font-weight="700" text-anchor="middle" fill="#04211d" font-family="system-ui, Arial, sans-serif">C</text>
+
+            <g font-family="ui-monospace, Menlo, Consolas, monospace">
+              <text x="48" y="108" font-size="22" fill="#21e6cc">== INVENTORY MENU ==</text>
+              <text x="48" y="140" font-size="18" fill="#93a1ba">[1] Add [2] View [3] Update [4] Delete</text>
+              <text x="48" y="186" font-size="17" fill="#93a1ba">ITEM</text>
+              <text x="318" y="186" font-size="17" fill="#93a1ba">QTY</text>
+              <text x="410" y="186" font-size="17" fill="#93a1ba">STOCK</text>
+              <line x1="48" y1="198" x2="592" y2="198" stroke="#1f2e4d" stroke-width="2"/>
+              <text x="48" y="232" font-size="20" fill="#eef2f8">Notebook</text>
+              <text x="318" y="232" font-size="20" fill="#eef2f8">120</text>
+              <text x="410" y="232" font-size="20" fill="#21e6cc">In stock</text>
+              <text x="48" y="268" font-size="20" fill="#eef2f8">USB Cable</text>
+              <text x="318" y="268" font-size="20" fill="#eef2f8">8</text>
+              <text x="410" y="268" font-size="20" fill="#ffd166">Low</text>
+              <text x="48" y="304" font-size="20" fill="#eef2f8">Desk Lamp</text>
+              <text x="318" y="304" font-size="20" fill="#eef2f8">0</text>
+              <text x="410" y="304" font-size="20" fill="#ff6b6b">Out</text>
+              <text x="48" y="352" font-size="20" fill="#21e6cc">&gt;</text>
+              <rect class="cursor" x="68" y="336" width="11" height="20" fill="#21e6cc"/>
+              <text x="592" y="352" font-size="13" text-anchor="end" fill="#93a1ba">illustration &middot; sample data</text>
+            </g>
+          </svg>
+        </div>
+        <div class="card-body">
+          <h3>Inventory Management System</h3>
+          <p>Inventory Management System is a console-based application developed in C to manage inventory records efficiently. It allows users to add, view, update, and delete product details, helping maintain organized product records and stock quantities through a simple menu-driven interface.</p>
+          <ul class="tags" aria-label="Technologies used">
+            <li>C</li><li>Console-based application</li>
+          </ul>
+          <div class="card-actions">
+            <a class="btn btn-primary btn-sm" data-link="https://github.com/portbox-dev/inventory-management-system-c" target="_blank" rel="noopener noreferrer">View Source Code</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section" id="skills" aria-labelledby="skills-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Skills</p>
+      <h2 id="skills-title">What I work with</h2>
+      <p class="sub">Tools and topics I use and am actively learning.</p>
+    </div>
+
+    <div class="grid skills-grid">
+      <article class="card skill-card reveal">
+        <h3>Programming</h3>
+        <ul class="tags"><li>C</li><li>C++</li></ul>
+      </article>
+      <article class="card skill-card reveal" style="--d:1">
+        <h3>Web Development</h3>
+        <ul class="tags"><li>HTML</li><li>CSS</li></ul>
+      </article>
+      <article class="card skill-card reveal" style="--d:2">
+        <h3>Data Structures and Algorithms</h3>
+        <ul class="tags"><li class="learning">DSA &mdash; Currently Learning</li></ul>
+      </article>
+      <article class="card skill-card reveal">
+        <h3>AI-Assisted Development</h3>
+        <ul class="tags"><li>AI-Assisted Coding</li><li>AI-Assisted Project Development</li></ul>
+        <p class="skill-note">Using AI tools to help build, improve, and troubleshoot projects.</p>
+      </article>
+      <article class="card skill-card reveal" style="--d:1">
+        <h3>Creative Design</h3>
+        <ul class="tags"><li>Canva</li><li>Basic Visual Design</li><li>Content Creation</li></ul>
+      </article>
+      <article class="card skill-card reveal" style="--d:2">
+        <h3>Video Editing</h3>
+        <ul class="tags"><li>Video Editing</li><li>Short-Form Video Editing</li><li>CapCut</li><li>Canva</li><li>InShot</li></ul>
+      </article>
+      <article class="card skill-card reveal">
+        <h3>Development Tools</h3>
+        <ul class="tags"><li>GitHub</li><li>AI-Assisted Development Tools</li></ul>
+      </article>
+    </div>
+    <p class="skills-foot reveal">This website is built with HTML, CSS, and JavaScript.</p>
+  </div>
+</section>
+
+<!-- ============ VIDEO EDITING ============ -->
+<section class="section videos" id="videos" aria-labelledby="videos-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Video Editing</p>
+      <h2 id="videos-title">Video Editing Portfolio</h2>
+      <p class="sub">I create and edit videos, including short-form content. Tap a thumbnail to play it here.</p>
+    </div>
+
+    <!--
+      HOW VIDEOS WORK
+      - data-video="" : a public YouTube link plays inside the page. Other links open in a new tab.
+      - data-thumb="" : optional thumbnail in assets (e.g. assets/video1.jpg).
+        If empty, YouTube's automatic thumbnail is used.
+      - Also update the "Watch on YouTube" link (href) in the same card.
+    -->
+
+    <!-- FEATURED VIDEO -->
+    <article class="featured reveal" aria-label="Featured editing portfolio video">
+      <div class="featured-player video-card" data-video="https://youtu.be/AfJ9Mztx2jc?si=WgYKhbJsMEJeK1VG" data-thumb="">
+        <div class="video-stage">
+          <div class="smart-media video-thumb" data-src="">
+            <img alt="Thumbnail of the featured editing portfolio video" hidden>
+            <div class="ph ph-video" aria-hidden="true"><span>Featured Editing Portfolio</span></div>
+          </div>
+          <button class="play-btn" type="button" aria-label="Play Featured Editing Portfolio video">
+            <svg class="ico" aria-hidden="true"><use href="#i-play"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="featured-info">
+        <span class="badge">Featured</span>
+        <h3>Featured Editing Portfolio</h3>
+        <p>A showcase of my video editing work.</p>
+        <a class="card-link" href="https://youtu.be/AfJ9Mztx2jc?si=WgYKhbJsMEJeK1VG" target="_blank" rel="noopener noreferrer">
+          Watch on YouTube <svg class="ico" aria-hidden="true"><use href="#i-external"/></svg>
+        </a>
+      </div>
+    </article>
+
+    <!-- SAMPLE VIDEOS + TOOLS
+         To add another sample: copy one <article class="card video-card short reveal"> block.
+         Use class "short" for vertical (Shorts) videos; remove "short" for normal 16:9 videos. -->
+    <div class="shorts-layout">
+      <article class="card video-card short reveal" data-video="https://youtube.com/shorts/iImFSLFiH5w?si=-yzqUs_nUJvttT4H" data-thumb="">
+        <div class="video-stage">
+          <div class="smart-media video-thumb" data-src="">
+            <img alt="Thumbnail of Editing Sample 01" hidden>
+            <div class="ph ph-video" aria-hidden="true"><span>Editing Sample 01</span></div>
+          </div>
+          <button class="play-btn" type="button" aria-label="Play Editing Sample 01">
+            <svg class="ico" aria-hidden="true"><use href="#i-play"/></svg>
+          </button>
+        </div>
+        <div class="card-body">
+          <h3>Editing Sample 01</h3>
+          <p>Short-form edit.</p>
+          <a class="card-link" href="https://youtube.com/shorts/iImFSLFiH5w?si=-yzqUs_nUJvttT4H" target="_blank" rel="noopener noreferrer">
+            Watch on YouTube <svg class="ico" aria-hidden="true"><use href="#i-external"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="card video-card short reveal" style="--d:1" data-video="https://youtube.com/shorts/kE4cFNoZjhY?si=Ng0ZIKRlegtTGuAT" data-thumb="">
+        <div class="video-stage">
+          <div class="smart-media video-thumb" data-src="">
+            <img alt="Thumbnail of Editing Sample 02" hidden>
+            <div class="ph ph-video" aria-hidden="true"><span>Editing Sample 02</span></div>
+          </div>
+          <button class="play-btn" type="button" aria-label="Play Editing Sample 02">
+            <svg class="ico" aria-hidden="true"><use href="#i-play"/></svg>
+          </button>
+        </div>
+        <div class="card-body">
+          <h3>Editing Sample 02</h3>
+          <p>Short-form edit.</p>
+          <a class="card-link" href="https://youtube.com/shorts/kE4cFNoZjhY?si=Ng0ZIKRlegtTGuAT" target="_blank" rel="noopener noreferrer">
+            Watch on YouTube <svg class="ico" aria-hidden="true"><use href="#i-external"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <aside class="video-info reveal" style="--d:2" aria-label="About my video editing">
+        <h3>How I edit</h3>
+        <p>I create and edit videos, including short-form content, using simple mobile and design tools.</p>
+        <h4>Editing tools</h4>
+        <ul class="tags" aria-label="Editing software">
+          <li>CapCut</li><li>Canva</li><li>InShot</li>
+        </ul>
+        <div class="btn-row" style="margin-top:22px">
+          <a class="btn btn-primary btn-sm" data-social="youtube" target="_blank" rel="noopener noreferrer">
+            <svg class="ico" aria-hidden="true"><use href="#i-youtube"/></svg> YouTube Channel
+          </a>
+          <a class="btn btn-ghost btn-sm" data-social="instagram" target="_blank" rel="noopener noreferrer">
+            <svg class="ico" aria-hidden="true"><use href="#i-instagram"/></svg> Instagram
+          </a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESUME ============ -->
+<section class="section alt" id="resume" aria-labelledby="resume-title">
+  <div class="container narrow">
+    <div class="resume-card reveal">
+      <div>
+        <p class="eyebrow">Resume</p>
+        <h2 id="resume-title">Want the full picture?</h2>
+        <p class="sub" data-resume-note>Resume coming soon. To enable this button, add your PDF at assets/resume.pdf.</p>
+      </div>
+      <a href="assets/resume.pdf" class="btn btn-primary" data-resume-link download>
+        <svg class="ico" aria-hidden="true"><use href="#i-download"/></svg>
+        <span data-resume-label>Resume</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section" id="contact" aria-labelledby="contact-title">
+  <div class="container narrow">
+    <div class="section-head reveal">
+      <p class="eyebrow">Contact</p>
+      <h2 id="contact-title">Let's talk</h2>
+      <p class="sub">Open to internships, entry-level roles, and creative collaboration. Email is the quickest way to reach me.</p>
+    </div>
+
+    <ul class="contact-list reveal" style="--d:1">
+      <li><a class="contact-item" data-social="email"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg><span><strong>Email</strong><small data-contact-text="email">Add your email</small></span></a></li>
+      <li><a class="contact-item" data-social="github" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="#i-github"/></svg><span><strong>GitHub</strong><small data-contact-text="github">Add your profile</small></span></a></li>
+      <li><a class="contact-item" data-social="youtube" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="#i-youtube"/></svg><span><strong>YouTube</strong><small data-contact-text="youtube">Add your channel</small></span></a></li>
+      <li><a class="contact-item" data-social="instagram" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="#i-instagram"/></svg><span><strong>Instagram</strong><small data-contact-text="instagram">Add your account</small></span></a></li>
+      <li><a class="contact-item" data-social="telegram" target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="#i-telegram"/></svg><span><strong>Telegram</strong><small data-contact-text="telegram">Add your account</small></span></a></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-wrap">
+    <div class="footer-brand">
+      <p class="brand-line"><span data-config="name">Neil Singh</span> <span class="brand-sep">|</span> <span class="brand-accent">Portbox</span></p>
+      <p class="copy">&copy; <span id="year">2026</span> <span data-config="name">Neil Singh</span>. All rights reserved.</p>
+    </div>
+    <ul class="social" aria-label="Social links">
+      <li><a data-social="github" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg class="ico" aria-hidden="true"><use href="#i-github"/></svg></a></li>
+      <li><a data-social="instagram" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg class="ico" aria-hidden="true"><use href="#i-instagram"/></svg></a></li>
+      <li><a data-social="youtube" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg class="ico" aria-hidden="true"><use href="#i-youtube"/></svg></a></li>
+      <li><a data-social="email" aria-label="Email"><svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg></a></li>
+      <li><a data-social="telegram" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><svg class="ico" aria-hidden="true"><use href="#i-telegram"/></svg></a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
