@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<!-- ============ ICON SPRITE (do not edit) ============ -->
+<!-- ============ ICON SPRITE ============ -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
   <defs>
     <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
@@ -91,7 +91,7 @@
     </div>
 
     <div class="hero-photo reveal" style="--d:1">
-      <!-- PHOTO: assets/profile.jpg. To change it, replace that file (keep the same name). -->
+      <!-- PHOTO: assets/profile.jpg. -->
       <div class="photo-frame smart-media" data-src="assets/profile.jpg">
         <img alt="Portrait of Neil Singh wearing a black blazer and white shirt" hidden>
         <div class="ph ph-person" role="img" aria-label="Profile photo placeholder">
@@ -128,17 +128,6 @@
 
     <div class="grid projects-grid" id="projectsGrid">
 
-      <!--
-        =====================================================
-        HOW TO ADD A NEW PROJECT
-        1. Copy everything from <article class="card project-card reveal"> to </article>
-        2. Paste it right after the last project card
-        3. Change: image path (data-src), alt text, title, description, tags, button links
-        4. Put your image in the assets folder. Remove a button you don't need.
-           A button with an empty data-link="" shows as disabled.
-        =====================================================
-      -->
-
       <!-- PROJECT 1: NextPath AI -->
       <article class="card project-card reveal">
         <div class="card-media smart-media" data-src="assets/nextpath-ai.png">
@@ -160,10 +149,7 @@
         </div>
       </article>
 
-      <!-- PROJECT 2: Inventory Management System
-           The thumbnail is a code-drawn SVG illustration with made-up sample data.
-           It is NOT a screenshot. To use a real screenshot later, replace the whole
-           <svg> block with the <img> block style used in Project 1. -->
+      <!-- PROJECT 2: Inventory Management System -->
       <article class="card project-card reveal" style="--d:1">
         <div class="card-media">
           <svg class="illus" viewBox="0 0 640 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of a C console inventory menu with sample product rows. Sample data only, not a real screenshot.">
@@ -267,15 +253,7 @@
       <h2 id="videos-title">Video Editing Portfolio</h2>
       <p class="sub">I create and edit videos, including short-form content. Tap a thumbnail to play it here.</p>
     </div>
-
-    <!--
-      HOW VIDEOS WORK
-      - data-video="" : a public YouTube link plays inside the page. Other links open in a new tab.
-      - data-thumb="" : optional thumbnail in assets (e.g. assets/video1.jpg).
-        If empty, YouTube's automatic thumbnail is used.
-      - Also update the "Watch on YouTube" link (href) in the same card.
-    -->
-
+    
     <!-- FEATURED VIDEO -->
     <article class="featured reveal" aria-label="Featured editing portfolio video">
       <div class="featured-player video-card" data-video="https://youtu.be/AfJ9Mztx2jc?si=WgYKhbJsMEJeK1VG" data-thumb="">
@@ -299,9 +277,7 @@
       </div>
     </article>
 
-    <!-- SAMPLE VIDEOS + TOOLS
-         To add another sample: copy one <article class="card video-card short reveal"> block.
-         Use class "short" for vertical (Shorts) videos; remove "short" for normal 16:9 videos. -->
+    <!-- SAMPLE VIDEOS + TOOLS -->
     <div class="shorts-layout">
       <article class="card video-card short reveal" data-video="https://youtube.com/shorts/iImFSLFiH5w?si=-yzqUs_nUJvttT4H" data-thumb="">
         <div class="video-stage">
