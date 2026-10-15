@@ -1,7 +1,5 @@
 /* =====================================================
    PORTBOX PORTFOLIO - script.js
-   EDIT ONLY THE "CONFIG" BLOCK BELOW to personalise the site.
-   Leave a value as "" (empty) to switch that link off.
    ===================================================== */
 const CONFIG = {
   name: "Neil Singh",
@@ -55,12 +53,10 @@ const CONFIG = {
     if (val) el.textContent = val.replace(/^https?:\/\/(www\.)?/, "").split("?")[0];
   });
 
-  /* Project buttons: <a data-link="https://..."> */
+  /* Project buttons */
   $$("a[data-link]").forEach(el => setLink(el, el.getAttribute("data-link")));
 
-  /* ---------- 3. Optional images (no broken-image icons) ----------
-     Each .smart-media tries to load its data-src.
-     If the file exists the image shows; otherwise the placeholder stays. */
+  /* ---------- 3. Optional images (no broken-image icons) ---------- */
   $$(".smart-media").forEach(box => {
     const src = box.getAttribute("data-src");
     const img = $("img", box);
@@ -71,10 +67,10 @@ const CONFIG = {
       img.hidden = false;
       box.classList.add("loaded");
     };
-    test.src = src; // onerror: do nothing, placeholder remains
+    test.src = src; 
   });
 
-  /* ---------- 4. Resume: enable only if assets/resume.pdf exists ---------- */
+  /* ---------- 4. Resume ---------- */
   const resumeLinks = $$("[data-resume-link]");
   const resumeNote = $("[data-resume-note]");
   function resumeUnavailable() {
@@ -91,10 +87,9 @@ const CONFIG = {
     $$("[data-resume-label]").forEach(l => { l.textContent = "Download Resume"; });
     if (resumeNote) resumeNote.textContent = "Download my resume as a PDF for a quick overview of my education, skills, and projects.";
   }
-  resumeUnavailable(); // safe default until we confirm the file exists
+  resumeUnavailable(); 
   if (window.location.protocol === "file:") {
-    // Browsers block file checks when opening index.html straight from your phone/PC.
-    // Check the PDF exists in assets/. On GitHub Pages this works automatically.
+    
   } else {
     fetch("assets/resume.pdf", { method: "HEAD" })
       .then(r => {
@@ -109,7 +104,7 @@ const CONFIG = {
           resumeAvailable();
         }
       })
-      .catch(() => { /* stays as "coming soon" */ });
+      .catch(() => {  });
   }
 
   /* ---------- 5. Mobile menu ---------- */
@@ -159,7 +154,7 @@ const CONFIG = {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add("is-visible");
-          obs.unobserve(entry.target); // reveal once: smooth and light on phones
+          obs.unobserve(entry.target); 
         }
       });
     }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
@@ -177,7 +172,7 @@ const CONFIG = {
         const m = u.pathname.match(/^\/(shorts|embed|live)\/([^/?]+)/);
         if (m) return m[2];
       }
-    } catch (e) { /* not a valid URL */ }
+    } catch (e) { }
     return null;
   }
 
@@ -188,7 +183,7 @@ const CONFIG = {
     const stage = $(".video-stage", card);
     const media = $(".video-thumb", card);
 
-    // Thumbnail from data-thumb (if provided)
+    
     if (thumb && media) {
       media.setAttribute("data-src", thumb);
       const img = $("img", media);
@@ -196,7 +191,7 @@ const CONFIG = {
       test.onload = () => { img.src = thumb; img.hidden = false; media.classList.add("loaded"); };
       test.src = thumb;
     } else if (url && media) {
-      // No custom thumbnail: use YouTube's automatic thumbnail if it's a YouTube link
+      
       const id = youTubeId(url);
       if (id) {
         const auto = "https://i.ytimg.com/vi/" + id + "/hqdefault.jpg";
